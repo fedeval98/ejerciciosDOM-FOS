@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <title>DOM</title>
 </head>
 <body>
-    <header>
-        <h2>Ejercicio de DOM</h2>
+    <header class="bg-color">
+        <h2 class="text-4xl font-bold">Ejercicio de DOM</h2>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -16,12 +17,17 @@
         </nav>
     </header>
     <main>
-        <h1>Datos</h1>
+        <h1 id="titulo" class="text-6xl p-4 font-bold">Datos</h1>
+        <div id="contenedor" class="flex flex-wrap justify-center items-center gap-4"></div>
+        <div id="lista"></div>
     </main>
-    <footer>
+    <footer class="bg-color">
         <p>MindHub ©</p>
     </footer>
+    <script src="./tailwind.config.js" ></script>
+    <script src="./datos.js"></script>
     <script src="./data.js"></script>
+    <script src="./fnos.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

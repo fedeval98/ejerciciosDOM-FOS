@@ -158,7 +158,7 @@ const frutas = [
     {
         id: 14,
         nombre: 'Granada',
-        foto: 'https://elpoderdelconsumidor.org/wp-content/uploads/2015/09/granada-roja.jpg',
+        foto: 'https://www.soriana.com/dw/image/v2/BGBD_PRD/on/demandware.static/-/Sites-soriana-grocery-master-catalog/default/dw95c59e33/images/product/0000000003766_A.jpg?sw=445&sh=445&sm=fit',
         colorPrincipal: 'rojo',
         esDulce: true,
         temporada: 'otoño',
