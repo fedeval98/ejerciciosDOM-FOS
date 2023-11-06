@@ -76,6 +76,18 @@ console.log (cervezaPorIbu (beers, 41.5))
 //Ej 8
 
 function cervezaPorParametro (beers, nombreId){
-    const devolverCervezaArray = beers.find((beer)=> beer.name === nombreId)
-    
+    const devolverCervezaArray = beers.findIndex((beer)=> beer.name === nombreId)
+
+    if(devolverCervezaArray !== -1){
+        return devolverCervezaArray
+    } else {
+        console.log (`${nombreId} no existe`)
+    }
 }
+
+const cervezaBuscar = "Hello My Name Is Mette-Marit"
+const indexCerveza = cervezaPorParametro (beers, cervezaBuscar)
+    if (indexCerveza !== -1){
+        console.log (`La cerveza ${cervezaBuscar} se encuentra en la posicion ${indexCerveza} del array`)
+    }
+
