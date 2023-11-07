@@ -22,12 +22,12 @@ modificarP.textContent = cambiarTextoP
 const divMain = document.getElementById("contenedor")
 
 // Punto 6
-function crearCard (fruta){
+function crearCard (frutas){
     return`
     <article class="border border-black w-72 flex flex-col h-96 items-center justify-evenly p-4">
-        <img class="w-36 max-h-36 object-contain" src="${fruta.foto}" alt="${fruta.nombre}"></img>
-        <h3 class="text-center font-bold">${fruta.nombre}</h3>
-        <p>${fruta.descripcion}</p>
+        <img class="w-36 max-h-36 object-contain" src="${frutas.foto}" alt="${frutas.nombre}">
+        <h3 class="text-center font-bold">${frutas.nombre}</h3>
+        <p>${frutas.descripcion}</p>
     </article>`
 }
 
@@ -70,5 +70,3 @@ const crearLista = listaFrutasDulces(frutas)
 
 // Punto 11
 divLista.appendChild(crearLista)
-
-
